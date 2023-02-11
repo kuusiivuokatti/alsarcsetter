@@ -22,7 +22,7 @@ int main(int argc,char *argv[]){
 	};
 
 	std::string dirHome=getenv("HOME");
-	std::string dirConf=dirHome+"/alsasetrc";
+	std::string dirConf=dirHome+"/alsarcsetter";
 	std::string fileConfCur=dirHome+"/.asoundrc";
 	
 	if(DEBUG){std::cout<<"Debugging is active\n"<<"Home directory set to "<<dirHome<<"\nConfig directory set to "<<dirConf<<"\nCurrent config file set to "<<fileConfCur<<"\n";}
