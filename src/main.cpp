@@ -28,7 +28,7 @@ int main(int argc,char *argv[]){
 	if(DEBUG){std::cout<<"Debugging is active\n"<<"Home directory set to "<<dirHome<<"\nConfig directory set to "<<dirConf<<"\nCurrent config file set to "<<fileConfCur<<"\n";}
 
 	std::vector<std::string>args(argv,argv+argc);
-	for(auto& arg:args){
+	for(auto &arg:args){
 		if(arg!=argv[0]){
 			if(DEBUG){std::cout<<"Current argument "<<arg<<"\n";}
 			if(arg=="-h" || arg=="--help"){
@@ -41,7 +41,7 @@ int main(int argc,char *argv[]){
 				if(std::filesystem::exists(dirConf)){
 					std::vector<std::pair<int,std::string>>fileConfVec;
 					int i=0,j=0;
-					for(const auto& file:std::filesystem::directory_iterator(dirConf)){
+					for(const auto &file:std::filesystem::directory_iterator(dirConf)){
 						if(not(std::filesystem::is_directory(file))){
 							fileConfVec.emplace_back(i,file.path());
 							i+=1;
@@ -67,7 +67,7 @@ int main(int argc,char *argv[]){
 									}
 									symlink(fileConfSel.c_str(),fileConfCur.c_str());
 									std::cout<<"New config file in use\n";
-								}catch(const std::filesystem::filesystem_error& err){
+								}catch(const std::filesystem::filesystem_error &err){
 									std::cout<<"Error removing old config file "<<err.what()<<"\n";
 								}
 							}else{
