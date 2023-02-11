@@ -5,7 +5,7 @@ INCLUDE=
 OBJDIR=./src/
 OBJ=$(OBJDIR)*.cpp
 EXECDIR=./lib/
-EXECUTABLE=$(EXECDIR)alsasetrc
+EXECUTABLE=$(EXECDIR)alsarcsetter
 
 all: $(EXECUTABLE)
 $(EXECUTABLE): $(OBJ)
