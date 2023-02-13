@@ -1,4 +1,4 @@
-## alsarcsetter (WORK IN PROGRESS)
+## alsarcsetter
 
 1. [About](README.md#about)
 
