@@ -6,7 +6,10 @@
 #include "../include/main.h"
 
 void PrintHelp(){
-	std::cout<<"Help goes here\n";
+	std::cout<<"usage: "<<NAME<<" [option]\n"
+		<<"-h, --help	display help\n"
+		<<"-v, --version	display version info\n"
+		<<"-s, --set	set config file to use\n";
 }
 
 int main(int argc,char *argv[]){
