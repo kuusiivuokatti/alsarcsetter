@@ -14,5 +14,6 @@ A tool for loading [ALSA](https://alsa-project.org/) configuration files from a 
 #### Documentation
 
 More detailed documentation about the project can be found in the doc folder.
+1. [changelog](doc/changelog.md) contains the change history
 
 ---
